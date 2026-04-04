@@ -1,0 +1,36 @@
+name: Scrape teplota Vltavy
+
+on:
+  schedule:
+    # Každé 2 hodiny (UTC) – GitHub Actions cron je vždy UTC
+    - cron: "0 */2 * * *"
+  workflow_dispatch:   # Umožní spustit ručně z GitHub UI
+
+permissions:
+  contents: write      # Potřebujeme zapisovat data/vltava.json do repa
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repozitáře
+        uses: actions/checkout@v4
+
+      - name: Nastavení Pythonu
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # Scraper používá pouze stdlib (re, json, urllib) – žádné pip install!
+      - name: Spustit scraper
+        run: python scraper/scrape_vltava.py
+
+      - name: Commit a push výsledků
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/vltava.json
+          # Commitni pouze pokud se soubor změnil
+          git diff --cached --quiet || git commit -m "data: aktualizace teploty Vltavy [skip ci]"
+          git push
