@@ -30,8 +30,12 @@ def send_discord(message: str, success: bool):
         headers={"Content-Type": "application/json"},
         method="POST",
     )
+    try:
     urllib.request.urlopen(req, timeout=10)
     print("Discord zpráva odeslána.")
+except urllib.error.HTTPError as e:
+    print(f"Discord chyba {e.code}: {e.read().decode('utf-8')}")
+    raise
 
 
 def main():
