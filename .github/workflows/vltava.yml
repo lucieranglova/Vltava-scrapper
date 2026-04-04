@@ -3,10 +3,10 @@ name: Scrape teplota Vltavy
 on:
   schedule:
     - cron: "0 7 * * *"
-  workflow_dispatch:   # Umožní spustit ručně z GitHub UI
+  workflow_dispatch:
 
 permissions:
-  contents: write      # Potřebujeme zapisovat data/vltava.json do repa
+  contents: write
 
 jobs:
   scrape:
@@ -21,7 +21,6 @@ jobs:
         with:
           python-version: "3.12"
 
-      # Scraper používá pouze stdlib (re, json, urllib) – žádné pip install!
       - name: Spustit scraper
         run: python scraper/scrape_vltava.py
 
@@ -30,6 +29,10 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/vltava.json
-          # Commitni pouze pokud se soubor změnil
           git diff --cached --quiet || git commit -m "data: aktualizace teploty Vltavy [skip ci]"
           git push
+
+      - name: Spustit testy a odeslat na Discord
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: python scraper/test_vltava.py
