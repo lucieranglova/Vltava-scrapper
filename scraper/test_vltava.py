@@ -25,11 +25,14 @@ def send_discord(message: str, success: bool):
     }).encode("utf-8")
 
     req = urllib.request.Request(
-        DISCORD_WEBHOOK,
-        data=payload,
-        headers={"Content-Type": "application/json"},
-        method="POST",
-    )
+    DISCORD_WEBHOOK,
+    data=payload,
+    headers={
+        "Content-Type": "application/json",
+        "User-Agent": "DiscordBot (https://github.com, 1.0)",
+    },
+    method="POST",
+)
     try:
         urllib.request.urlopen(req, timeout=10)
         print("Discord zpráva odeslána.")
