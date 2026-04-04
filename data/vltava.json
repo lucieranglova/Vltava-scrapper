@@ -1,14 +1,38 @@
 {
   "zdroj": "https://hydro.chmi.cz/hppsoldv/hpps_prfdyn.php?seq=307225",
   "stanice": "Praha - Chuchle (Vltava)",
-  "aktualizovano_utc": "2026-04-04T18:39:14.264091Z",
+  "aktualizovano_utc": "2026-04-04T19:18:57.027920Z",
   "aktualni": {
-    "datetime": "04.04.2026 20:30",
-    "stav_cm": 46,
-    "prutok_m3s": 53.6,
+    "datetime": "04.04.2026 21:10",
+    "stav_cm": 47,
+    "prutok_m3s": 56.4,
     "teplota_c": 6.9
   },
   "poslednich_24h": [
+    {
+      "datetime": "04.04.2026 21:10",
+      "stav_cm": 47,
+      "prutok_m3s": 56.4,
+      "teplota_c": 6.9
+    },
+    {
+      "datetime": "04.04.2026 21:00",
+      "stav_cm": 48,
+      "prutok_m3s": 59.3,
+      "teplota_c": 6.9
+    },
+    {
+      "datetime": "04.04.2026 20:50",
+      "stav_cm": 47,
+      "prutok_m3s": 56.4,
+      "teplota_c": 6.9
+    },
+    {
+      "datetime": "04.04.2026 20:40",
+      "stav_cm": 47,
+      "prutok_m3s": 56.4,
+      "teplota_c": 6.9
+    },
     {
       "datetime": "04.04.2026 20:30",
       "stav_cm": 46,
@@ -31,24 +55,6 @@
       "datetime": "04.04.2026 20:00",
       "stav_cm": 46,
       "prutok_m3s": 53.6,
-      "teplota_c": 6.9
-    },
-    {
-      "datetime": "04.04.2026 19:50",
-      "stav_cm": 47,
-      "prutok_m3s": 56.4,
-      "teplota_c": 6.9
-    },
-    {
-      "datetime": "04.04.2026 19:40",
-      "stav_cm": 47,
-      "prutok_m3s": 56.4,
-      "teplota_c": 6.9
-    },
-    {
-      "datetime": "04.04.2026 19:30",
-      "stav_cm": 47,
-      "prutok_m3s": 56.4,
       "teplota_c": 6.9
     },
     {
@@ -185,12 +191,6 @@
     },
     {
       "datetime": "03.04.2026 21:00",
-      "stav_cm": 53,
-      "prutok_m3s": 75.7,
-      "teplota_c": 6.8
-    },
-    {
-      "datetime": "03.04.2026 20:00",
       "stav_cm": 53,
       "prutok_m3s": 75.7,
       "teplota_c": 6.8
