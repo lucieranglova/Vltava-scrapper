@@ -24,65 +24,38 @@ def fetch_html(url: str) -> str:
 
 def parse_table(html: str) -> list[dict]:
     """
-    Hledá tabulku s hlavičkou: Datum a čas | Stav [cm] | Průtok ... | Teplota [°C]
-    Vrací seznam řádků jako dict.
+    Parsuje raw HTML – hledá <td> tagy a seskupuje je po 4:
+    datum+čas | stav cm | průtok m3s | teplota °C
     """
-    # Najdi blok tabulky s měřenými hodnotami
-    # Řádky vypadají: <td>03.04.2026 17:20</td><td>53</td><td>75.7</td><td>6.8</td>
-    pattern = re.compile(
-        r"(\d{2}\.\d{2}\.\d{4}\s+\d{2}:\d{2})"   # datum čas
-        r"\s*\|\s*(\d+)"                            # stav cm
-        r"\s*\|\s*([\d.]+)"                         # průtok
-        r"\s*\|\s*([\d.]+)"                         # teplota
-    )
+    date_pat = re.compile(r'^\d{2}\.\d{2}\.\d{4}\s+\d{2}:\d{2}$')
 
-    # HTML tabulka – BeautifulSoup není k dispozici, parsujeme regexem
-    # Struktura: | datum | stav | průtok | teplota |
-    # (z markdownu víme že jsou odděleny " | ")
+    # Vytáhni všechny hodnoty z <td>...</td>
+    td_values = re.findall(r'<td[^>]*>\s*([^<]+?)\s*</td>', html)
+
     rows = []
-    for m in pattern.finditer(html):
-        dt_str, stav, prutok, teplota = m.groups()
-        rows.append({
-            "datetime": dt_str.strip(),
-            "stav_cm": int(stav),
-            "prutok_m3s": float(prutok),
-            "teplota_c": float(teplota),
-        })
-
-    # Fallback: zkus raw HTML <td> parsing bez bs4
-    if not rows:
-        rows = parse_html_td(html)
-
-    return rows
-
-
-def parse_html_td(html: str) -> list[dict]:
-    """Záložní parser přímo z HTML <td> tagů."""
-    # Odstraň HTML tagy
-    clean = re.sub(r"<[^>]+>", "|", html)
-    clean = re.sub(r"\|+", "|", clean)
-
-    date_pat = re.compile(r"(\d{2}\.\d{2}\.\d{4}\s+\d{2}:\d{2})")
-    rows = []
-
-    # Najdi všechny výskyty data a pak vezmi 3 hodnoty za ním
-    parts = clean.split("|")
-    for i, part in enumerate(parts):
-        part = part.strip()
-        if date_pat.match(part):
+    i = 0
+    while i < len(td_values):
+        val = td_values[i].strip()
+        if date_pat.match(val):
             try:
-                stav = parts[i + 1].strip()
-                prutok = parts[i + 2].strip()
-                teplota = parts[i + 3].strip()
-                if re.match(r"^\d+$", stav) and re.match(r"^[\d.]+$", prutok) and re.match(r"^[\d.]+$", teplota):
+                stav   = td_values[i + 1].strip()
+                prutok = td_values[i + 2].strip()
+                teplo  = td_values[i + 3].strip()
+                if (re.match(r'^\d+$', stav)
+                        and re.match(r'^[\d.]+$', prutok)
+                        and re.match(r'^[\d.]+$', teplo)):
                     rows.append({
-                        "datetime": part,
-                        "stav_cm": int(stav),
+                        "datetime":   val,
+                        "stav_cm":    int(stav),
                         "prutok_m3s": float(prutok),
-                        "teplota_c": float(teplota),
+                        "teplota_c":  float(teplo),
                     })
-            except (IndexError, ValueError):
-                continue
+                    i += 4
+                    continue
+            except IndexError:
+                pass
+        i += 1
+
     return rows
 
 
@@ -94,7 +67,7 @@ def main():
     if not rows:
         raise ValueError("Nepodařilo se parsovat žádná data z HTML!")
 
-    # Nejnovější hodnota = první řádek (stránka je seřazena od nejnovějšího)
+    # Nejnovější hodnota = první řádek (stránka řazena od nejnovějšího)
     latest = rows[0]
 
     output = {
@@ -102,7 +75,7 @@ def main():
         "stanice": "Praha - Chuchle (Vltava)",
         "aktualizovano_utc": datetime.utcnow().isoformat() + "Z",
         "aktualni": latest,
-        "posledních_24h": rows,
+        "poslednich_24h": rows,
     }
 
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
