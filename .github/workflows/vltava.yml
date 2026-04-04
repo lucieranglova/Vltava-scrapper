@@ -2,8 +2,7 @@ name: Scrape teplota Vltavy
 
 on:
   schedule:
-    # Každé 2 hodiny (UTC) – GitHub Actions cron je vždy UTC
-    - cron: "0 */2 * * *"
+    - cron: "0 7 * * *"
   workflow_dispatch:   # Umožní spustit ručně z GitHub UI
 
 permissions:
