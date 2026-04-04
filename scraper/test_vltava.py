@@ -14,7 +14,7 @@ def send_discord(message: str, success: bool):
         print("Chybí DISCORD_WEBHOOK_URL — zpráva se neodešle")
         return
 
-    color = 3066993 if success else 15158332  # zelená / červená
+    color = 3066993 if success else 15158332
 
     payload = json.dumps({
         "embeds": [{
@@ -31,11 +31,11 @@ def send_discord(message: str, success: bool):
         method="POST",
     )
     try:
-    urllib.request.urlopen(req, timeout=10)
-    print("Discord zpráva odeslána.")
-except urllib.error.HTTPError as e:
-    print(f"Discord chyba {e.code}: {e.read().decode('utf-8')}")
-    raise
+        urllib.request.urlopen(req, timeout=10)
+        print("Discord zpráva odeslána.")
+    except urllib.error.HTTPError as e:
+        print(f"Discord chyba {e.code}: {e.read().decode('utf-8')}")
+        raise
 
 
 def main():
