@@ -14,7 +14,7 @@ OUTPUT = Path("data/vltava.json")
 # Korekce teploty pro Braník (rozdíl oproti stanici Chuchle)
 KOREKCE = {
     1: +0.5, 2: +0.5, 3: +0.5,
-    4: +0.5,    5: 0,
+    4: 0,    5: 0,
     6: -0.5,
     7: -1.0, 8: -1.0,
     9: -0.5, 10: -0.5,
