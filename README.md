@@ -1,6 +1,6 @@
-# 🌊 Vltava Temperature Scraper
+# 🌊 Vltava Temperature Scraper - Braník
 
-Automatický scraper teploty Vltavy z webu ČHMÚ. Každé 2 hodiny stáhne aktuální data ze stanice **Praha – Chuchle** a uloží je jako JSON do repozitáře, odkud je lze přímo číst na webu.
+Automatický scraper teploty Vltavy z webu ČHMÚ. Každý den v 5:00 a 12:00 stáhne aktuální data ze stanice **Praha – Chuchle**, dopočítá předpovídanou teplotu v Braníku a uloží je jako JSON do repozitáře, odkud je lze přímo číst na webu.
 
 ## Jak to funguje
 
@@ -8,13 +8,13 @@ Automatický scraper teploty Vltavy z webu ČHMÚ. Každé 2 hodiny stáhne aktu
 ČHMÚ měřák (každých ~10 min)
         ↓
 hydro.chmi.cz  ← živá HTML stránka
-        ↓  GitHub Actions cron (každé 2h)
+        ↓  GitHub Actions cron
 data/vltava.json  ← uloženo v repozitáři
         ↓
 váš web / plugin
 ```
 
-Scraper pokaždé stahuje živou stránku ČHMÚ — data v JSON jsou tedy vždy maximálně 2 hodiny stará.
+Scraper pokaždé stahuje živou stránku ČHMÚ
 
 ---
 
@@ -64,7 +64,7 @@ Soubor `data/vltava.json` má tuto strukturu:
 ## Použití na webu
 
 ```javascript
-const url = 'https://raw.githubusercontent.com/lucieranglova/Vltava-scrapper/main/data/vltava.json';
+const url = 'https://raw.githubusercontent.com/vasrepozitar/Vltava-scrapper/main/data/vltava.json';
 
 fetch(url)
   .then(r => r.json())
