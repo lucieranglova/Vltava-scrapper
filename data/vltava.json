@@ -1,54 +1,82 @@
 {
   "zdroj": "https://hydro.chmi.cz/hppsoldv/hpps_prfdyn.php?seq=307225",
   "stanice": "Praha - Chuchle (Vltava)",
-  "aktualizovano_utc": "2026-05-10T10:53:47.984977Z",
+  "aktualizovano_utc": "2026-05-10T14:17:47.612749Z",
   "aktualni": {
-    "datetime": "10.05.2026 12:40",
+    "datetime": "10.05.2026 16:00",
     "stav_cm": 47,
     "prutok_m3s": 56.4,
-    "teplota_c": 11.9,
-    "teplota_raw_c": 11.9
+    "teplota_c": 12.4,
+    "teplota_raw_c": 12.4
   },
   "poslednich_24h": [
     {
-      "datetime": "10.05.2026 12:40",
+      "datetime": "10.05.2026 16:00",
       "stav_cm": 47,
       "prutok_m3s": 56.4,
-      "teplota_c": 11.9,
-      "teplota_raw_c": 11.9
+      "teplota_c": 12.4,
+      "teplota_raw_c": 12.4
     },
     {
-      "datetime": "10.05.2026 12:30",
-      "stav_cm": 47,
-      "prutok_m3s": 56.4,
-      "teplota_c": 11.9,
-      "teplota_raw_c": 11.9
+      "datetime": "10.05.2026 15:50",
+      "stav_cm": 48,
+      "prutok_m3s": 59.3,
+      "teplota_c": 12.4,
+      "teplota_raw_c": 12.4
     },
     {
-      "datetime": "10.05.2026 12:20",
+      "datetime": "10.05.2026 15:40",
       "stav_cm": 49,
       "prutok_m3s": 62.4,
-      "teplota_c": 11.9,
-      "teplota_raw_c": 11.9
+      "teplota_c": 12.4,
+      "teplota_raw_c": 12.4
     },
     {
-      "datetime": "10.05.2026 12:10",
+      "datetime": "10.05.2026 15:30",
+      "stav_cm": 49,
+      "prutok_m3s": 62.4,
+      "teplota_c": 12.3,
+      "teplota_raw_c": 12.3
+    },
+    {
+      "datetime": "10.05.2026 15:20",
       "stav_cm": 47,
       "prutok_m3s": 56.4,
-      "teplota_c": 11.8,
-      "teplota_raw_c": 11.8
+      "teplota_c": 12.3,
+      "teplota_raw_c": 12.3
+    },
+    {
+      "datetime": "10.05.2026 15:10",
+      "stav_cm": 48,
+      "prutok_m3s": 59.3,
+      "teplota_c": 12.2,
+      "teplota_raw_c": 12.2
+    },
+    {
+      "datetime": "10.05.2026 15:00",
+      "stav_cm": 46,
+      "prutok_m3s": 53.6,
+      "teplota_c": 12.2,
+      "teplota_raw_c": 12.2
+    },
+    {
+      "datetime": "10.05.2026 14:00",
+      "stav_cm": 47,
+      "prutok_m3s": 56.4,
+      "teplota_c": 12.0,
+      "teplota_raw_c": 12.0
+    },
+    {
+      "datetime": "10.05.2026 13:00",
+      "stav_cm": 48,
+      "prutok_m3s": 59.3,
+      "teplota_c": 12.0,
+      "teplota_raw_c": 12.0
     },
     {
       "datetime": "10.05.2026 12:00",
       "stav_cm": 45,
       "prutok_m3s": 50.9,
-      "teplota_c": 11.9,
-      "teplota_raw_c": 11.9
-    },
-    {
-      "datetime": "10.05.2026 11:50",
-      "stav_cm": 44,
-      "prutok_m3s": 48.3,
       "teplota_c": 11.9,
       "teplota_raw_c": 11.9
     },
@@ -191,34 +219,6 @@
       "prutok_m3s": 56.4,
       "teplota_c": 11.9,
       "teplota_raw_c": 11.9
-    },
-    {
-      "datetime": "09.05.2026 15:00",
-      "stav_cm": 47,
-      "prutok_m3s": 56.4,
-      "teplota_c": 11.8,
-      "teplota_raw_c": 11.8
-    },
-    {
-      "datetime": "09.05.2026 14:00",
-      "stav_cm": 49,
-      "prutok_m3s": 62.4,
-      "teplota_c": 11.7,
-      "teplota_raw_c": 11.7
-    },
-    {
-      "datetime": "09.05.2026 13:00",
-      "stav_cm": 47,
-      "prutok_m3s": 56.4,
-      "teplota_c": 11.8,
-      "teplota_raw_c": 11.8
-    },
-    {
-      "datetime": "09.05.2026 12:00",
-      "stav_cm": 48,
-      "prutok_m3s": 59.3,
-      "teplota_c": 11.8,
-      "teplota_raw_c": 11.8
     }
   ]
 }
