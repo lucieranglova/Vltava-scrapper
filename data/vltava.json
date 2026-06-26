@@ -1,59 +1,87 @@
 {
   "zdroj": "https://hydro.chmi.cz/hppsoldv/hpps_prfdyn.php?seq=307225",
   "stanice": "Praha - Chuchle (Vltava)",
-  "aktualizovano_utc": "2026-06-26T06:59:05.800374Z",
+  "aktualizovano_utc": "2026-06-26T12:05:55.706415Z",
   "aktualni": {
-    "datetime": "26.06.2026 08:50",
+    "datetime": "26.06.2026 13:50",
     "stav_cm": 46,
     "prutok_m3s": 53.6,
-    "teplota_c": 16.5,
-    "teplota_raw_c": 17.0
+    "teplota_c": 16.3,
+    "teplota_raw_c": 16.8
   },
   "poslednich_24h": [
     {
-      "datetime": "26.06.2026 08:50",
+      "datetime": "26.06.2026 13:50",
+      "stav_cm": 46,
+      "prutok_m3s": 53.6,
+      "teplota_c": 16.3,
+      "teplota_raw_c": 16.8
+    },
+    {
+      "datetime": "26.06.2026 13:40",
+      "stav_cm": 46,
+      "prutok_m3s": 53.6,
+      "teplota_c": 16.1,
+      "teplota_raw_c": 16.6
+    },
+    {
+      "datetime": "26.06.2026 13:30",
+      "stav_cm": 48,
+      "prutok_m3s": 59.3,
+      "teplota_c": 16.2,
+      "teplota_raw_c": 16.7
+    },
+    {
+      "datetime": "26.06.2026 13:20",
+      "stav_cm": 47,
+      "prutok_m3s": 56.4,
+      "teplota_c": 16.1,
+      "teplota_raw_c": 16.6
+    },
+    {
+      "datetime": "26.06.2026 13:10",
+      "stav_cm": 48,
+      "prutok_m3s": 59.3,
+      "teplota_c": 16.4,
+      "teplota_raw_c": 16.9
+    },
+    {
+      "datetime": "26.06.2026 13:00",
+      "stav_cm": 46,
+      "prutok_m3s": 53.6,
+      "teplota_c": 16.3,
+      "teplota_raw_c": 16.8
+    },
+    {
+      "datetime": "26.06.2026 12:00",
+      "stav_cm": 47,
+      "prutok_m3s": 56.4,
+      "teplota_c": 16.3,
+      "teplota_raw_c": 16.8
+    },
+    {
+      "datetime": "26.06.2026 11:00",
+      "stav_cm": 46,
+      "prutok_m3s": 53.6,
+      "teplota_c": 16.1,
+      "teplota_raw_c": 16.6
+    },
+    {
+      "datetime": "26.06.2026 10:00",
+      "stav_cm": 47,
+      "prutok_m3s": 56.4,
+      "teplota_c": 16.4,
+      "teplota_raw_c": 16.9
+    },
+    {
+      "datetime": "26.06.2026 09:00",
       "stav_cm": 46,
       "prutok_m3s": 53.6,
       "teplota_c": 16.5,
       "teplota_raw_c": 17.0
-    },
-    {
-      "datetime": "26.06.2026 08:40",
-      "stav_cm": 46,
-      "prutok_m3s": 53.6,
-      "teplota_c": 16.5,
-      "teplota_raw_c": 17.0
-    },
-    {
-      "datetime": "26.06.2026 08:30",
-      "stav_cm": 46,
-      "prutok_m3s": 53.6,
-      "teplota_c": 16.6,
-      "teplota_raw_c": 17.1
-    },
-    {
-      "datetime": "26.06.2026 08:20",
-      "stav_cm": 46,
-      "prutok_m3s": 53.6,
-      "teplota_c": 16.6,
-      "teplota_raw_c": 17.1
-    },
-    {
-      "datetime": "26.06.2026 08:10",
-      "stav_cm": 46,
-      "prutok_m3s": 53.6,
-      "teplota_c": 16.6,
-      "teplota_raw_c": 17.1
     },
     {
       "datetime": "26.06.2026 08:00",
-      "stav_cm": 46,
-      "prutok_m3s": 53.6,
-      "teplota_c": 16.6,
-      "teplota_raw_c": 17.1
-    },
-    {
-      "datetime": "26.06.2026 07:50",
       "stav_cm": 46,
       "prutok_m3s": 53.6,
       "teplota_c": 16.6,
@@ -184,48 +212,6 @@
       "prutok_m3s": 53.6,
       "teplota_c": 16.2,
       "teplota_raw_c": 16.7
-    },
-    {
-      "datetime": "25.06.2026 13:00",
-      "stav_cm": 46,
-      "prutok_m3s": 53.6,
-      "teplota_c": 16.2,
-      "teplota_raw_c": 16.7
-    },
-    {
-      "datetime": "25.06.2026 12:00",
-      "stav_cm": 48,
-      "prutok_m3s": 59.3,
-      "teplota_c": 16.1,
-      "teplota_raw_c": 16.6
-    },
-    {
-      "datetime": "25.06.2026 11:00",
-      "stav_cm": 46,
-      "prutok_m3s": 53.6,
-      "teplota_c": 16.3,
-      "teplota_raw_c": 16.8
-    },
-    {
-      "datetime": "25.06.2026 10:00",
-      "stav_cm": 46,
-      "prutok_m3s": 53.6,
-      "teplota_c": 16.3,
-      "teplota_raw_c": 16.8
-    },
-    {
-      "datetime": "25.06.2026 09:00",
-      "stav_cm": 46,
-      "prutok_m3s": 53.6,
-      "teplota_c": 16.4,
-      "teplota_raw_c": 16.9
-    },
-    {
-      "datetime": "25.06.2026 08:00",
-      "stav_cm": 46,
-      "prutok_m3s": 53.6,
-      "teplota_c": 16.5,
-      "teplota_raw_c": 17.0
     }
   ]
 }
