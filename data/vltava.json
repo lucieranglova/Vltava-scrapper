@@ -1,9 +1,9 @@
 {
   "zdroj": "https://hydro.chmi.cz/hppsoldv/hpps_prfdyn.php?seq=307225",
   "stanice": "Praha - Chuchle (Vltava)",
-  "aktualizovano_utc": "2026-09-30T16:08:48.515240Z",
+  "aktualizovano_utc": "2026-09-30T18:13:29.135449Z",
   "aktualni": {
-    "datetime": "30.09.2026 17:10",
+    "datetime": "30.09.2026 19:50",
     "stav_cm": 40,
     "prutok_m3s": 33.0,
     "teplota_c": 13.9,
@@ -11,7 +11,35 @@
   },
   "poslednich_24h": [
     {
-      "datetime": "30.09.2026 17:10",
+      "datetime": "30.09.2026 19:50",
+      "stav_cm": 40,
+      "prutok_m3s": 33.0,
+      "teplota_c": 13.9,
+      "teplota_raw_c": 14.4
+    },
+    {
+      "datetime": "30.09.2026 19:40",
+      "stav_cm": 40,
+      "prutok_m3s": 33.0,
+      "teplota_c": 13.9,
+      "teplota_raw_c": 14.4
+    },
+    {
+      "datetime": "30.09.2026 19:30",
+      "stav_cm": 40,
+      "prutok_m3s": 33.0,
+      "teplota_c": 13.9,
+      "teplota_raw_c": 14.4
+    },
+    {
+      "datetime": "30.09.2026 19:20",
+      "stav_cm": 40,
+      "prutok_m3s": 33.0,
+      "teplota_c": 13.9,
+      "teplota_raw_c": 14.4
+    },
+    {
+      "datetime": "30.09.2026 19:10",
       "stav_cm": 40,
       "prutok_m3s": 33.0,
       "teplota_c": 13.9,
@@ -142,13 +170,6 @@
       "prutok_m3s": 33.0,
       "teplota_c": 13.8,
       "teplota_raw_c": 14.3
-    },
-    {
-      "datetime": "29.09.2026 18:00",
-      "stav_cm": 40,
-      "prutok_m3s": 33.0,
-      "teplota_c": 14.0,
-      "teplota_raw_c": 14.5
     }
   ]
 }
