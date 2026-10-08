@@ -1,47 +1,54 @@
 {
   "zdroj": "https://hydro.chmi.cz/hppsoldv/hpps_prfdyn.php?seq=307225",
   "stanice": "Praha - Chuchle (Vltava)",
-  "aktualizovano_utc": "2026-10-08T17:04:43.675221Z",
+  "aktualizovano_utc": "2026-10-08T19:05:21.877450Z",
   "aktualni": {
-    "datetime": "08.10.2026 18:50",
-    "stav_cm": 43,
-    "prutok_m3s": 40.2,
+    "datetime": "08.10.2026 20:40",
+    "stav_cm": 44,
+    "prutok_m3s": 42.9,
     "teplota_c": 13.5,
     "teplota_raw_c": 14.0
   },
   "poslednich_24h": [
     {
-      "datetime": "08.10.2026 18:50",
-      "stav_cm": 43,
-      "prutok_m3s": 40.2,
-      "teplota_c": 13.5,
-      "teplota_raw_c": 14.0
-    },
-    {
-      "datetime": "08.10.2026 18:40",
+      "datetime": "08.10.2026 20:40",
       "stav_cm": 44,
       "prutok_m3s": 42.9,
       "teplota_c": 13.5,
       "teplota_raw_c": 14.0
     },
     {
-      "datetime": "08.10.2026 18:30",
-      "stav_cm": 43,
-      "prutok_m3s": 40.2,
-      "teplota_c": 13.5,
-      "teplota_raw_c": 14.0
-    },
-    {
-      "datetime": "08.10.2026 18:20",
-      "stav_cm": 42,
-      "prutok_m3s": 37.6,
-      "teplota_c": 13.5,
-      "teplota_raw_c": 14.0
-    },
-    {
-      "datetime": "08.10.2026 18:10",
+      "datetime": "08.10.2026 20:30",
       "stav_cm": 44,
       "prutok_m3s": 42.9,
+      "teplota_c": 13.5,
+      "teplota_raw_c": 14.0
+    },
+    {
+      "datetime": "08.10.2026 20:20",
+      "stav_cm": 44,
+      "prutok_m3s": 42.9,
+      "teplota_c": 13.5,
+      "teplota_raw_c": 14.0
+    },
+    {
+      "datetime": "08.10.2026 20:10",
+      "stav_cm": 45,
+      "prutok_m3s": 45.8,
+      "teplota_c": 13.5,
+      "teplota_raw_c": 14.0
+    },
+    {
+      "datetime": "08.10.2026 20:00",
+      "stav_cm": 44,
+      "prutok_m3s": 42.9,
+      "teplota_c": 13.5,
+      "teplota_raw_c": 14.0
+    },
+    {
+      "datetime": "08.10.2026 19:00",
+      "stav_cm": 43,
+      "prutok_m3s": 40.2,
       "teplota_c": 13.5,
       "teplota_raw_c": 14.0
     },
@@ -198,20 +205,6 @@
       "prutok_m3s": 37.6,
       "teplota_c": 13.6,
       "teplota_raw_c": 14.1
-    },
-    {
-      "datetime": "07.10.2026 20:00",
-      "stav_cm": 42,
-      "prutok_m3s": 37.6,
-      "teplota_c": 13.7,
-      "teplota_raw_c": 14.2
-    },
-    {
-      "datetime": "07.10.2026 19:00",
-      "stav_cm": 42,
-      "prutok_m3s": 37.6,
-      "teplota_c": 13.7,
-      "teplota_raw_c": 14.2
     }
   ]
 }
