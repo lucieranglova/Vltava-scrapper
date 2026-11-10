@@ -1,9 +1,9 @@
 {
   "zdroj": "https://hydro.chmi.cz/hppsoldv/hpps_prfdyn.php?seq=307225",
   "stanice": "Praha - Chuchle (Vltava)",
-  "aktualizovano_utc": "2026-11-10T10:01:39.515168Z",
+  "aktualizovano_utc": "2026-11-10T13:03:18.791556Z",
   "aktualni": {
-    "datetime": "10.11.2026 10:50",
+    "datetime": "10.11.2026 13:40",
     "stav_cm": 41,
     "prutok_m3s": 35.2,
     "teplota_c": 8.5,
@@ -11,39 +11,60 @@
   },
   "poslednich_24h": [
     {
-      "datetime": "10.11.2026 10:50",
+      "datetime": "10.11.2026 13:40",
       "stav_cm": 41,
       "prutok_m3s": 35.2,
       "teplota_c": 8.5,
       "teplota_raw_c": 8.5
     },
     {
-      "datetime": "10.11.2026 10:40",
+      "datetime": "10.11.2026 13:30",
       "stav_cm": 41,
       "prutok_m3s": 35.2,
-      "teplota_c": 8.4,
-      "teplota_raw_c": 8.4
+      "teplota_c": 8.5,
+      "teplota_raw_c": 8.5
     },
     {
-      "datetime": "10.11.2026 10:30",
+      "datetime": "10.11.2026 13:20",
       "stav_cm": 41,
       "prutok_m3s": 35.2,
-      "teplota_c": 8.4,
-      "teplota_raw_c": 8.4
+      "teplota_c": 8.5,
+      "teplota_raw_c": 8.5
     },
     {
-      "datetime": "10.11.2026 10:20",
+      "datetime": "10.11.2026 13:10",
       "stav_cm": 41,
       "prutok_m3s": 35.2,
-      "teplota_c": 8.3,
-      "teplota_raw_c": 8.3
+      "teplota_c": 8.5,
+      "teplota_raw_c": 8.5
     },
     {
-      "datetime": "10.11.2026 10:10",
+      "datetime": "10.11.2026 13:00",
       "stav_cm": 41,
       "prutok_m3s": 35.2,
-      "teplota_c": 8.4,
-      "teplota_raw_c": 8.4
+      "teplota_c": 8.5,
+      "teplota_raw_c": 8.5
+    },
+    {
+      "datetime": "10.11.2026 12:50",
+      "stav_cm": 40,
+      "prutok_m3s": 33.0,
+      "teplota_c": 8.5,
+      "teplota_raw_c": 8.5
+    },
+    {
+      "datetime": "10.11.2026 12:00",
+      "stav_cm": 41,
+      "prutok_m3s": 35.2,
+      "teplota_c": 8.6,
+      "teplota_raw_c": 8.6
+    },
+    {
+      "datetime": "10.11.2026 11:00",
+      "stav_cm": 41,
+      "prutok_m3s": 35.2,
+      "teplota_c": 8.5,
+      "teplota_raw_c": 8.5
     },
     {
       "datetime": "10.11.2026 10:00",
@@ -51,13 +72,6 @@
       "prutok_m3s": 35.2,
       "teplota_c": 8.4,
       "teplota_raw_c": 8.4
-    },
-    {
-      "datetime": "10.11.2026 09:50",
-      "stav_cm": 41,
-      "prutok_m3s": 35.2,
-      "teplota_c": 8.1,
-      "teplota_raw_c": 8.1
     },
     {
       "datetime": "10.11.2026 09:00",
