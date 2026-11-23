@@ -1,56 +1,105 @@
 {
   "zdroj": "https://hydro.chmi.cz/hppsoldv/hpps_prfdyn.php?seq=307225",
   "stanice": "Praha - Chuchle (Vltava)",
-  "aktualizovano_utc": "2026-11-23T03:15:18.147884Z",
+  "aktualizovano_utc": "2026-11-23T10:02:41.352087Z",
   "aktualni": {
-    "datetime": "23.11.2026 04:00",
+    "datetime": "23.11.2026 10:50",
     "stav_cm": 45,
     "prutok_m3s": 46.9,
-    "teplota_c": 6.8,
-    "teplota_raw_c": 6.8
+    "teplota_c": 7.0,
+    "teplota_raw_c": 7.0
   },
   "poslednich_24h": [
+    {
+      "datetime": "23.11.2026 10:50",
+      "stav_cm": 45,
+      "prutok_m3s": 46.9,
+      "teplota_c": 7.0,
+      "teplota_raw_c": 7.0
+    },
+    {
+      "datetime": "23.11.2026 10:40",
+      "stav_cm": 45,
+      "prutok_m3s": 46.9,
+      "teplota_c": 7.0,
+      "teplota_raw_c": 7.0
+    },
+    {
+      "datetime": "23.11.2026 10:30",
+      "stav_cm": 45,
+      "prutok_m3s": 46.9,
+      "teplota_c": 6.9,
+      "teplota_raw_c": 6.9
+    },
+    {
+      "datetime": "23.11.2026 10:20",
+      "stav_cm": 44,
+      "prutok_m3s": 44.3,
+      "teplota_c": 7.0,
+      "teplota_raw_c": 7.0
+    },
+    {
+      "datetime": "23.11.2026 10:10",
+      "stav_cm": 45,
+      "prutok_m3s": 46.9,
+      "teplota_c": 7.0,
+      "teplota_raw_c": 7.0
+    },
+    {
+      "datetime": "23.11.2026 10:00",
+      "stav_cm": 45,
+      "prutok_m3s": 46.9,
+      "teplota_c": 7.0,
+      "teplota_raw_c": 7.0
+    },
+    {
+      "datetime": "23.11.2026 09:50",
+      "stav_cm": 44,
+      "prutok_m3s": 44.3,
+      "teplota_c": 7.0,
+      "teplota_raw_c": 7.0
+    },
+    {
+      "datetime": "23.11.2026 09:00",
+      "stav_cm": 46,
+      "prutok_m3s": 49.7,
+      "teplota_c": 6.8,
+      "teplota_raw_c": 6.8
+    },
+    {
+      "datetime": "23.11.2026 08:00",
+      "stav_cm": 45,
+      "prutok_m3s": 46.9,
+      "teplota_c": 6.7,
+      "teplota_raw_c": 6.7
+    },
+    {
+      "datetime": "23.11.2026 07:00",
+      "stav_cm": 45,
+      "prutok_m3s": 46.9,
+      "teplota_c": 6.6,
+      "teplota_raw_c": 6.6
+    },
+    {
+      "datetime": "23.11.2026 06:00",
+      "stav_cm": 45,
+      "prutok_m3s": 46.9,
+      "teplota_c": 6.7,
+      "teplota_raw_c": 6.7
+    },
+    {
+      "datetime": "23.11.2026 05:00",
+      "stav_cm": 45,
+      "prutok_m3s": 46.9,
+      "teplota_c": 6.7,
+      "teplota_raw_c": 6.7
+    },
     {
       "datetime": "23.11.2026 04:00",
       "stav_cm": 45,
       "prutok_m3s": 46.9,
       "teplota_c": 6.8,
       "teplota_raw_c": 6.8
-    },
-    {
-      "datetime": "23.11.2026 03:50",
-      "stav_cm": 45,
-      "prutok_m3s": 46.9,
-      "teplota_c": 6.8,
-      "teplota_raw_c": 6.8
-    },
-    {
-      "datetime": "23.11.2026 03:40",
-      "stav_cm": 45,
-      "prutok_m3s": 46.9,
-      "teplota_c": 6.8,
-      "teplota_raw_c": 6.8
-    },
-    {
-      "datetime": "23.11.2026 03:30",
-      "stav_cm": 45,
-      "prutok_m3s": 46.9,
-      "teplota_c": 6.7,
-      "teplota_raw_c": 6.7
-    },
-    {
-      "datetime": "23.11.2026 03:20",
-      "stav_cm": 45,
-      "prutok_m3s": 46.9,
-      "teplota_c": 6.7,
-      "teplota_raw_c": 6.7
-    },
-    {
-      "datetime": "23.11.2026 03:10",
-      "stav_cm": 45,
-      "prutok_m3s": 46.9,
-      "teplota_c": 6.7,
-      "teplota_raw_c": 6.7
     },
     {
       "datetime": "23.11.2026 03:00",
@@ -177,48 +226,6 @@
       "prutok_m3s": 49.7,
       "teplota_c": 7.4,
       "teplota_raw_c": 7.4
-    },
-    {
-      "datetime": "22.11.2026 09:00",
-      "stav_cm": 46,
-      "prutok_m3s": 49.7,
-      "teplota_c": 7.1,
-      "teplota_raw_c": 7.1
-    },
-    {
-      "datetime": "22.11.2026 08:00",
-      "stav_cm": 46,
-      "prutok_m3s": 49.7,
-      "teplota_c": 6.9,
-      "teplota_raw_c": 6.9
-    },
-    {
-      "datetime": "22.11.2026 07:00",
-      "stav_cm": 46,
-      "prutok_m3s": 49.7,
-      "teplota_c": 7.0,
-      "teplota_raw_c": 7.0
-    },
-    {
-      "datetime": "22.11.2026 06:00",
-      "stav_cm": 45,
-      "prutok_m3s": 46.9,
-      "teplota_c": 7.1,
-      "teplota_raw_c": 7.1
-    },
-    {
-      "datetime": "22.11.2026 05:00",
-      "stav_cm": 45,
-      "prutok_m3s": 46.9,
-      "teplota_c": 7.0,
-      "teplota_raw_c": 7.0
-    },
-    {
-      "datetime": "22.11.2026 04:00",
-      "stav_cm": 45,
-      "prutok_m3s": 46.9,
-      "teplota_c": 7.1,
-      "teplota_raw_c": 7.1
     }
   ]
 }
